@@ -1,0 +1,46 @@
+import { lazy } from "react";
+
+const AddTraningUnits = lazy(() => import("../components/trainingunits/AddTrainingUnit"));
+const TrainingUnitsOrgList = lazy(() => import("../components/trainingunits/TrainingUnitsOrgList"));
+const TrainingUnitsDetailedView = lazy(() => import("../components/trainingunits/TrainingUnitDetailView"));
+
+const trainingUnitRoutes = [
+  {
+    path: "/trainingUnits/create",
+    name: "Add A TrainingUnit",
+    element: AddTraningUnits,
+    roles: ["OrgAdmin", "OrgTrainer"],
+    exact: true,
+    isAnonymous: false,
+  },
+  {
+    path: "/trainingUnits/OrgList",
+    name: "Organization List",
+    element: TrainingUnitsOrgList,
+    roles: ["OrgAdmin", "OrgTrainer"],
+    exact: true,
+    isAnonymous: false,
+  },
+  {
+    path: "/trainingunit/:id/edit",
+    name: "Update A TrainingUnit",
+    element: AddTraningUnits,
+    roles: ["OrgAdmin", "OrgTrainer"],
+    exact: true,
+    isAnonymous: false,
+  },
+  {
+    path: "/trainingunit/:id/viewdetails",
+    name: "Detailed view of Training Unit",
+    element: TrainingUnitsDetailedView,
+    roles: ["OrgAdmin", "OrgTrainer"],
+    exact: true,
+    isAnonymous: false,
+  },
+];
+
+
+const allRoutes = [
+  ...trainingUnitRoutes,
+];
+export default allRoutes;
