@@ -1,23 +1,6 @@
-﻿using Sabio.Data.Providers;
-using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Sabio.Data;
-using Sabio.Services.Interfaces;
-using Sabio.Models.Domain.TrainingUnits;
 
-using System.Reflection;
-using Sabio.Models.Requests.TrainingUnits;
-using Sabio.Models.Domain;
-using Sabio.Models;
-using static System.Net.Mime.MediaTypeNames;
-using Sabio.Models.Domain.Organizations;
 
-namespace Sabio.Services
+namespace 
 {
     public class TrainingUnitService : ITrainingUnitService
     {
