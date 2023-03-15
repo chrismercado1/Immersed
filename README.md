@@ -1,1 +1,1 @@
-# Immersed is an immersive, kid-friendly, interactive, isolated, and safe security training tool. Immersed is an MVP and due to the proprietary nature of the code I can only provide code snippets of my code. This repository contains SQL, .NET, and React code for the TrainingUnit feature.
+# Immersed is an immersive, kid-friendly, interactive, isolated, and safe security training tool. Due to the proprietary nature of the code I can only provide code snippets of my code. This repository contains SQL, .NET, and React code for the TrainingUnit feature.
